@@ -36,3 +36,25 @@ h3 {
 .mention {
   font-weight: 700;
 }
+
+.bg-1 {
+  background: var(--bg-header);
+}
+.bg-2 {
+  background: var(--bg-aside);
+}
+.bg-3 {
+  background: #0c9696;
+}
+
+.bc-1 {
+  border-left: 5px solid var(--bg-header);
+  margin-right: 3rem;
+}
+.bc-2 {
+  border-left: 5px solid var(--bg-2);
+  margin-right: 3rem;
+}
+.bc-3 {
+  border-left: 5px solid #0c9696;
+}
