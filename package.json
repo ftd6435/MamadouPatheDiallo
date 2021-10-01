@@ -1,0 +1,16 @@
+{
+  "name": "PROJETCV",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss -o css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "node_module": "0.0.0"
+  }
+}

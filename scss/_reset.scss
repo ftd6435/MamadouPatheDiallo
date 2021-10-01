@@ -1,0 +1,40 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html body {
+  font-family: var(--font-family);
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-1) 40%,
+    10%,
+    var(--bg-2) 40%
+  );
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  min-width: 100%;
+}
