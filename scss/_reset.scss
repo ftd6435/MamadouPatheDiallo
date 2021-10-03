@@ -6,6 +6,7 @@
 }
 
 html body {
+  @include Mobile;
   font-family: var(--font-family);
   background-image: linear-gradient(
     to bottom,

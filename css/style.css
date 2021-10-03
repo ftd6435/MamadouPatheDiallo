@@ -19,6 +19,100 @@ html body {
   background-image: linear-gradient(to bottom, var(--bg-1) 40%, 10%, var(--bg-2) 40%);
   color: var(--text);
   font-size: 1.6rem; }
+  @media only screen and (max-width: 640px) {
+    html body {
+      /*========= Formation et competences =============*/
+      /*==== Competences ====*/
+      /*========= Fin de la mise en forme Formation et Competences =============*/
+      /*========= Experience professionnelle ========*/
+      /*========= Fin de la mise en forme Experience professionnelle =============*/
+      /*========= Centre d'interet et langues ========*/
+      /*========= Fin de la mise en forme Centre d'interet et langues =============*/ }
+      html body .container {
+        margin: 0.5rem; }
+      html body .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 270px 335px;
+        grid-template-areas: "profil" "image" "social";
+        align-items: start;
+        padding: 1rem; }
+      html body .header-img {
+        grid-area: image;
+        margin: auto; }
+      html body .profil {
+        grid-area: profil;
+        border: none;
+        padding-left: 0; }
+        html body .profil h1 {
+          font-size: 4rem;
+          margin-bottom: 1.5rem;
+          letter-spacing: 0.3rem; }
+        html body .profil-text {
+          border: none;
+          text-align: center;
+          padding-right: 0;
+          padding-top: 1.5rem; }
+      html body .social {
+        grid-area: social; }
+      html body .social-content {
+        margin-bottom: 3rem; }
+      html body main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1110px);
+        margin: 0.5rem; }
+      html body .formation-content {
+        grid-template-columns: 1fr; }
+        html body .formation-content h5 {
+          font-size: 1.7rem; }
+        html body .formation-content p {
+          font-size: 1.6rem; }
+      html body .competences {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 450px); }
+      html body .bar .progress {
+        width: 312px; }
+      html body .bar .progress-niveau {
+        width: 295px;
+        height: 8px;
+        background: #eee;
+        border-radius: 20px; }
+      html body .bar .mb {
+        width: 280px; }
+      html body .bar .ab {
+        width: 255px; }
+      html body .bar .dw-p {
+        width: 240px; }
+      html body .bar .dw-pm {
+        width: 220px; }
+      html body .bar .dw-b {
+        width: 260px; }
+      html body .logiciel {
+        padding: 1rem; }
+      html body .Devweb {
+        padding: 1rem; }
+        html body .Devweb p {
+          font-size: 1.6rem; }
+      html body .experience {
+        padding: 1rem;
+        margin-top: -11rem; }
+        html body .experience h2 {
+          margin-bottom: 2.5rem; }
+      html body .exp-content {
+        flex-direction: column; }
+      html body .content {
+        grid-template-rows: repeat(3, 68px); }
+        html body .content-text {
+          margin-right: 0; }
+      html body .plaisir {
+        grid-template-columns: 1fr;
+        padding: 1rem; }
+      html body .centre-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 150px); }
+      html body .block-2 {
+        padding-left: 0; }
+      html body .block-3-content {
+        padding-left: 2rem; } }
 
 ul {
   list-style: none; }
@@ -90,6 +184,12 @@ h3 {
 .bc-3 {
   border-left: 5px solid #0c9696; }
 
+.container {
+  margin: 1.8rem;
+  min-height: 100vh;
+  background: white; }
+
+/*========= Entete de la page le Header =============*/
 .header {
   background: var(--bg-header);
   color: #e2e2e2;
@@ -98,8 +198,7 @@ h3 {
   grid-template-columns: 300px auto 250px;
   grid-auto-rows: auto; }
   .header-img {
-    width: 270px;
-    height: 220; }
+    width: 270px; }
   .header img {
     border-radius: 50%; }
 
@@ -152,11 +251,7 @@ h3 {
       font-size: 1.3rem;
       font-style: italic; }
 
-.container {
-  margin: 1.8rem;
-  min-height: 100vh;
-  background: white; }
-
+/*========= Fin de la mise en forme Entete de la page le Header =============*/
 /*========= Formation et competences =============*/
 main {
   margin: 3rem;
@@ -187,7 +282,8 @@ main {
       margin-bottom: 1rem;
       font-size: 1.4rem; }
   .formation .line {
-    border-top: 1px solid #ddd; }
+    border-top: 1px solid #ddd;
+    margin: 1rem 0; }
 
 /*==== Competences ====*/
 .competences {

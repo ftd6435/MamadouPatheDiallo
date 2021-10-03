@@ -1,0 +1,166 @@
+@mixin Mobile {
+  @media only screen and (max-width: 640px) {
+    .container {
+      margin: 0.5rem;
+    }
+
+    .header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 270px 335px;
+      grid-template-areas:
+        "profil"
+        "image"
+        "social";
+      align-items: start;
+      padding: 1rem;
+    }
+
+    .header-img {
+      grid-area: image;
+      margin: auto;
+    }
+
+    .profil {
+      grid-area: profil;
+      border: none;
+      padding-left: 0;
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.3rem;
+      }
+
+      &-text {
+        border: none;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 1.5rem;
+      }
+    }
+
+    .social {
+      grid-area: social;
+    }
+    .social-content {
+      margin-bottom: 3rem;
+    }
+
+    /*========= Formation et competences =============*/
+
+    main {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1110px);
+      margin: 0.5rem;
+    }
+
+    .formation-content {
+      grid-template-columns: 1fr;
+
+      h5 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    /*==== Competences ====*/
+
+    .competences {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 450px);
+    }
+
+    .bar {
+      .progress {
+        width: 312px;
+      }
+
+      .progress-niveau {
+        width: 295px;
+        height: 8px;
+        background: #eee;
+        border-radius: 20px;
+      }
+
+      .mb {
+        width: 280px;
+      }
+      .ab {
+        width: 255px;
+      }
+
+      .dw-p {
+        width: 240px;
+      }
+      .dw-pm {
+        width: 220px;
+      }
+      .dw-b {
+        width: 260px;
+      }
+    }
+
+    .logiciel {
+      padding: 1rem;
+    }
+
+    .Devweb {
+      padding: 1rem;
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    /*========= Fin de la mise en forme Formation et Competences =============*/
+
+    /*========= Experience professionnelle ========*/
+
+    .experience {
+      padding: 1rem;
+      margin-top: -11rem;
+
+      h2 {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .exp-content {
+      flex-direction: column;
+    }
+
+    .content {
+      grid-template-rows: repeat(3, 68px);
+
+      &-text {
+        margin-right: 0;
+      }
+    }
+
+    /*========= Fin de la mise en forme Experience professionnelle =============*/
+
+    /*========= Centre d'interet et langues ========*/
+
+    .plaisir {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+    .centre-block {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 150px);
+    }
+
+    .block-2 {
+      padding-left: 0;
+    }
+
+    .block-3-content {
+      padding-left: 2rem;
+    }
+
+    /*========= Fin de la mise en forme Centre d'interet et langues =============*/
+  }
+}
